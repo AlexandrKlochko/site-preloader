@@ -21,4 +21,4 @@ function _show_preloader(){
         require_once WP_PLUGIN_DIR . '/site-preloader/templates/frontend/' . get_option('site_preloader_template') . '.php';
     }
 }
-add_action('after_body', '_show_preloader');
+add_action('wp_footer', '_show_preloader');
